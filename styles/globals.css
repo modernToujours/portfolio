@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+* {
+  font-family: "AppleSDGothicNeo", "Noto Sans KR", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+.swiper.main {
+  overflow: visible;
+  height: calc(100vh - 64px);
+  width: 100%;
+  margin: "0 auto";
+  bottom: 0;
+}
+.swiper.project {
+  overflow: visible;
+  min-height: 100%;
+  bottom: 0;
+}
+
+.swiper.inner {
+  margin: 10px auto;
+  height: 100%;
+}
+
+@media (min-width: 601px) {
+  .swiper.inner {
+    width: 480px;
+    height: 240px;
+    min-width: 480px;
+    min-height: 240px;
+  }
+  .swiper.project {
+    width: 1000px;
+    padding: 30px 30px;
+  }
+
+  .swiper-button-next {
+    transform: translateX(35px);
+  }
+  .swiper-button-prev {
+    transform: translateX(-35px);
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper.inner {
+    width: 300px;
+    min-width: 300px;
+    height: 150px;
+    min-height: 150px;
+  }
+  .swiper-button-next {
+    transform: translateX(35px);
+  }
+  .swiper-button-prev {
+    transform: translateX(-35px);
+  }
+  .swiper.project {
+    width: 500px;
+    padding: 30px 15px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.swiper-pagination-fraction {
+  transform: translateY(50px) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1c1c1c !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1c1c1c !important;
+}
