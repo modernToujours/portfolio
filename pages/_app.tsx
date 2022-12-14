@@ -1,11 +1,10 @@
-import "../styles/globals.css";
+import React from "react";
 import type { AppProps } from "next/app";
 import CssBaseline from "@mui/material/CssBaseline";
-import React from "react";
+
+import "../styles/globals.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
-
-
   return (
     <React.Fragment>
       <CssBaseline />

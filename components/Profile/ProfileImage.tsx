@@ -15,7 +15,7 @@ const ProfileImage = (props: CardProps) => {
       {...props}
     >
       <Image
-        src="/images/choi.png"
+        src="/s3/portfolio/choi.png"
         alt="profile-img"
         width={300}
         height={450}

@@ -1,6 +1,6 @@
 import { useFrame, useLoader } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-import { Mesh, MeshNormalMaterial } from "three";
+import { Mesh } from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 
 const Burger = ({
@@ -8,7 +8,7 @@ const Burger = ({
 }: {
   position: [x: number, y: number, z: number];
 }) => {
-  const obj = useLoader(OBJLoader, "http://localhost:3000/models/burger3.obj");
+  const obj = useLoader(OBJLoader, "/s3/burger/burger.obj");
 
   const burger = useMemo(() => obj.clone(), [obj]);
 
@@ -43,7 +43,6 @@ const Burger = ({
       scale={0.4}
       rotation={position}
     />
-    // <mesh ref={ref} geometry={obj.mesh.geometry} />
   );
 };
 

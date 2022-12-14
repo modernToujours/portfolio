@@ -1,5 +1,7 @@
-import { Box } from "@mui/material";
 import React from "react";
+
+import { Box } from "@mui/material";
+
 import Text from "../Layout/Text";
 
 const SkillTitle = ({ title }: { title: string }) => {

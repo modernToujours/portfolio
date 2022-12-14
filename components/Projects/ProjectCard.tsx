@@ -6,6 +6,7 @@ import SkillChip from "./SkillChip";
 import SkillTitle from "./SkillTitle";
 import ProjectTitle from "./ProjectTitle";
 import ProjectImgSwiper from "./ProjectImgSwiper";
+import Text from "../Layout/Text";
 
 export type Project = {
   name: string;
@@ -39,8 +40,15 @@ const ProjectCard = (props: Project) => {
         sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" } }}
       >
         <ProjectImgSwiper projectImgs={props.projectImgs} />
-        <Box component={"div"} sx={{ padding: "10px" }}>
-          <Typography>{props.detail}</Typography>
+        <Box
+          component={"div"}
+          sx={{
+            padding: "10px",
+            overflow: "hidden",
+            width: { xs: "300px", sm: "500px" },
+          }}
+        >
+          <Text>{props.detail}</Text>
           {props.skills.frontEnd && (
             <Box component={"div"} sx={{ display: "flex" }}>
               <SkillTitle title="Front End" />

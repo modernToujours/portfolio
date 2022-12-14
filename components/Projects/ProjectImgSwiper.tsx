@@ -11,7 +11,12 @@ const ProjectImgSwiper = ({ projectImgs }: { projectImgs: string[] }) => {
       {projectImgs.map((img) => {
         return (
           <SwiperSlide key={img}>
-            <Image src={img} alt={img} fill />
+            <Image
+              src={img}
+              alt={img}
+              fill
+              sizes="(max-width:600px) 200px, (min-width:601px) 480px"
+            />
           </SwiperSlide>
         );
       })}

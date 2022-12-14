@@ -1,8 +1,10 @@
-import { Box } from "@mui/material";
 import React from "react";
+
+import { Box } from "@mui/material";
 import { SwiperSlide } from "swiper/react";
-import ProjectCard, { Project } from "./ProjectCard";
+
 import Title from "../Layout/Title";
+import ProjectCard, { Project } from "./ProjectCard";
 import ProjectSwiper from "../Swiper/Projects/ProjectSwiper";
 import SwiperWrapper from "./SwiperWrapper";
 

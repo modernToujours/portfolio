@@ -181,10 +181,10 @@ main {
 
 @media (max-width: 600px) {
   .swiper.inner {
-    width: 300px;
-    min-width: 300px;
-    height: 150px;
-    min-height: 150px;
+    width: 200px;
+    min-width: 200px;
+    height: 100px;
+    min-height: 100px;
   }
   .swiper-button-next {
     transform: translateX(35px);
@@ -193,7 +193,7 @@ main {
     transform: translateX(-35px);
   }
   .swiper.project {
-    width: 500px;
+    width: 300px;
     padding: 30px 15px;
   }
 }

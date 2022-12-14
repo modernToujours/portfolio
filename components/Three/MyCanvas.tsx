@@ -1,6 +1,7 @@
-import { PerspectiveCamera } from "@react-three/drei";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { Suspense } from "react";
+
+import { Canvas } from "@react-three/fiber";
+
 import Burger from "./Burger";
 import Camera from "./Camera";
 

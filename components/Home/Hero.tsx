@@ -24,7 +24,7 @@ const Hero = () => {
     >
       <ImageCard>
         <Image
-          src="/images/main-logo.png"
+          src="/s3/portfolio/main-logo.png"
           alt="main-image"
           width={300}
           height={300}

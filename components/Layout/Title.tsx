@@ -1,6 +1,6 @@
-import { Typography } from "@mui/material";
-import { TypographyProps } from "@mui/system";
 import React from "react";
+
+import { Typography, TypographyProps } from "@mui/material";
 
 const Title: typeof Typography = (props: TypographyProps) => {
   return (

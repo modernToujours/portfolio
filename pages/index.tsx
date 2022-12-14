@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { Box } from "@mui/material";
 import SwiperCore from "swiper";
@@ -19,6 +19,7 @@ import { Project } from "../components/Projects/ProjectCard";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Head from "next/head";
 
 export default function Home({
   profile,
@@ -34,7 +35,6 @@ export default function Home({
     if (swiper) swiper.slideTo(id, 2000);
   };
 
-  console.log(projects);
   return (
     <Box component={"div"} sx={{ overflow: "hidden" }}>
       <PersistentDrawer onClickMenu={onClickMenu}>
@@ -75,12 +75,12 @@ export const getStaticProps = async () => {
   const profileRes = await axios.get(
     "https://portfolio-a876e-default-rtdb.firebaseio.com/profile.json"
   );
-  const profile = profileRes.data;
+  const profile = profileRes?.data;
   const projectsRes = await axios.get(
     "https://portfolio-a876e-default-rtdb.firebaseio.com/projects.json"
   );
-  const projects = projectsRes.data;
-  console.log(projects);
+  const projects = projectsRes?.data;
+
   return {
     props: { profile, projects },
   };
