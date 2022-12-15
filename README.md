@@ -4,11 +4,10 @@
 
 ## 👋 **Overview**
 
-- 개요
-- 기술 및 라이브러리
-- 배포
-
----
+- [개요](#개요)
+- [사용 기술 및 라이브러리](#사용-기술-및-라이브러리)
+- [간단 기능 소개](#간단-기능-소개)
+- [배포](#배포)
 
 <br>
 
@@ -30,8 +29,6 @@
 
 배포 사이트는 [portfolio.moderntoujours.dev](http://portfolio.moderntoujours.dev) 를 통해 확인하실 수 있습니다.
 
----
-
 <br>
 
 ## **사용 기술 및 라이브러리**
@@ -50,8 +47,6 @@
 ![AWS-ROUTE53](https://img.shields.io/badge/ROUTE53-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
----
-
 <br>
 
 ## 간단 기능 소개
@@ -63,13 +58,11 @@
 
 <br>
 
----
-
 ## 배포
 
 <br>
 
 - 프론트 부분은 [Vercel](https://vercel.com/)을 통해서 배포중 입니다.
 - 도메인은 [개인 블로그](https://www.moderntoujours.dev/)를 만들기 위해 [가비아](https://www.gabia.com/)에서 구입하고 [Route53](https://aws.amazon.com/ko/route53/)에서 호스팅 중인 주소의 서브도메인을 사용중입니다.
-- 전체적인 이미지들의 주소와 [프로필 페이지](https://portfolio.moderntoujours.dev/#Projects), [프로젝트 페이지](https://portfolio.moderntoujours.dev/#Projects)에서 보여지는 정보들은 [firebase](https://firebase.google.com/) 에 저장되어 불러와집니다.
-- 사용하는 이미지 및 기타 파일들은 [AWS S3](https://aws.amazon.com/ko/s3/)에 업로드 되어있어 이로부터 불러와집니다.
+- 전체적인 이미지들의 주소 및 [프로필 페이지](https://portfolio.moderntoujours.dev/#Projects), [프로젝트 페이지](https://portfolio.moderntoujours.dev/#Projects)에서 보여지는 정보들은 [firebase](https://firebase.google.com/)의 Realtime Database 로부터 호출됩니다.
+- 사용하는 이미지 및 기타 파일들은 [AWS S3](https://aws.amazon.com/ko/s3/)에 업로드 되어있어 이로부터 불러옵니다.
