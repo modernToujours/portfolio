@@ -6,7 +6,7 @@ const nextConfig = {
     emotion: true,
   },
   crossOrigin: "anonymous",
-  images: {},
+  images: { unoptimized: true },
   rewrites: async () => {
     return [
       {
