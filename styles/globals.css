@@ -193,7 +193,7 @@ main {
     transform: translateX(-35px);
   }
   .swiper.project {
-    width: 300px;
+    width: 250px;
     padding: 30px 15px;
   }
 }

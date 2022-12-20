@@ -8,9 +8,15 @@ const SkillTitle = ({ title }: { title: string }) => {
   return (
     <Box
       component={"div"}
-      sx={{ width: "100px", textAlign: "left", padding: "6px" }}
+      sx={{
+        minWidth: { xs: "65px", sm: "100px" },
+        textAlign: "left",
+        padding: { xs: "3px", sm: "6px" },
+      }}
     >
-      <Text>{title}</Text>
+      <Text sx={{ fontSize: { xs: "0.7rem", sm: "1rem" }, fontWeight: "bold" }}>
+        {title}
+      </Text>
     </Box>
   );
 };

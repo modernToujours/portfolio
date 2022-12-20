@@ -7,6 +7,8 @@ import BookIcon from "@mui/icons-material/Book";
 
 import Title from "../Layout/Title";
 import Text from "../Layout/Text";
+import ContactText from "./ContactText";
+import ContactTitleBox from "./ContactTitleBox";
 
 const Contact = () => {
   return (
@@ -17,33 +19,33 @@ const Contact = () => {
           <Box component={"div"} sx={{ textAlign: "left" }}>
             <GitHubIcon fontSize="large" />
           </Box>
-          <Box component={"div"} sx={{ width: "80px", textAlign: "left" }}>
-            <Text>Github</Text>
-          </Box>
+          <ContactTitleBox>
+            <ContactText>Github</ContactText>
+          </ContactTitleBox>
           <Link target="blank" href="https://github.com/modernToujours">
-            <Text>https://github.com/modernToujours</Text>
+            <ContactText>https://github.com/modernToujours</ContactText>
           </Link>
         </Box>
         <Box component={"div"} sx={{ display: "flex", alignItems: "center" }}>
           <Box component={"div"} sx={{ textAlign: "left" }}>
             <EmailIcon fontSize="large" />
           </Box>
-          <Box component={"div"} sx={{ width: "80px", textAlign: "left" }}>
-            <Text>Email</Text>
-          </Box>
+          <ContactTitleBox>
+            <ContactText>Email</ContactText>
+          </ContactTitleBox>
           <Link>
-            <Text>youngwon0607@gmail.com</Text>
+            <ContactText>youngwon0607@gmail.com</ContactText>
           </Link>
         </Box>{" "}
         <Box component={"div"} sx={{ display: "flex", alignItems: "center" }}>
           <Box component={"div"} sx={{ textAlign: "left" }}>
             <BookIcon fontSize="large" />
           </Box>
-          <Box component={"div"} sx={{ width: "80px", textAlign: "left" }}>
-            <Text>Blog</Text>
-          </Box>
+          <ContactTitleBox>
+            <ContactText>Blog</ContactText>
+          </ContactTitleBox>
           <Link target="blank" href="https://www.moderntoujours.dev/">
-            <Text>https://www.moderntoujours.dev</Text>
+            <ContactText>https://www.moderntoujours.dev</ContactText>
           </Link>
         </Box>
       </Box>
